@@ -9,8 +9,10 @@ int main()
     std::cout << "Hello World!\n";
     Node a;
     a.setVert('A');
-    a.setEdge('A');
-
+    a.addEdge('A');
+    a.addEdge('B');
+    a.addEdge('C');
+    a.displayNode();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

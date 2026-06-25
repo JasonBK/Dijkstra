@@ -11,6 +11,7 @@ class Node
 	public:
 		void setVert(char);
 		void addEdge(char);
+		void displayNode();
 };
 
 #endif
