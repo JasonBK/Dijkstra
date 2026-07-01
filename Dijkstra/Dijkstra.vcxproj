@@ -140,10 +140,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Dijkstra.cpp" />
+    <ClCompile Include="Graph.cpp" />
     <ClCompile Include="node.cpp" />
+    <ClCompile Include="Solver.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Graph.h" />
     <ClInclude Include="node.hpp" />
+    <ClInclude Include="Solver.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

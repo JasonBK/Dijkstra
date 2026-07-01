@@ -3,16 +3,20 @@
 
 #include <iostream>
 #include "node.hpp"
+#include "Graph.h"
 
 int main()
 {
     std::cout << "Hello World!\n";
     Node a;
+    Graph A;
     a.setVert('A');
-    a.addEdge('A');
-    a.addEdge('B');
-    a.addEdge('C');
+    a.addEdge('A',0);
+    a.addEdge('B',2);
+    a.addEdge('C',3);
     a.displayNode();
+
+    A.addNode(a);
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

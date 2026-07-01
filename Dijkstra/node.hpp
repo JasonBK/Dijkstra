@@ -1,6 +1,7 @@
 #ifndef NODE_HPP
 #define NODE_HPP
 #include <list>
+#include <unordered_map>
 // node class declaration
 
 class Node
@@ -8,9 +9,11 @@ class Node
 	private:
 		char vert;
 		std::list<char> edge;
+		std::unordered_map<int, char> costMap;
+		 
 	public:
 		void setVert(char);
-		void addEdge(char);
+		void addEdge(char,int);
 		void displayNode();
 };
 
