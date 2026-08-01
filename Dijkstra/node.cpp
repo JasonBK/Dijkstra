@@ -20,6 +20,7 @@ void Node::displayNode()
 	std::cout << "Edge: ";
 	for (char edgeitem : Node::edge)
 	{
-		std::cout << edgeitem << " ";
+		std::cout << "Edge"<< edgeitem << " ";
+		std::cout << "Cost" <<Node::costMap.at(edgeitem)<<std::endl;
 	}
 }

@@ -7,6 +7,8 @@ private:
 	std::list<Node> nodeList;
 public:
 	void addNode(Node);
+	void displayList();
+
 
 };
 
