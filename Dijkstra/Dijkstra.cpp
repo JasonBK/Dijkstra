@@ -4,6 +4,7 @@
 #include <iostream>
 #include "node.hpp"
 #include "Graph.h"
+#include "Solver.h"
 
 int main()
 {
@@ -56,6 +57,8 @@ int main()
     starterGraph.addNode(d);
     starterGraph.addNode(e);
     starterGraph.addNode(f);
+
+    Solver agent('A', 'C');
 
 // identify start node and end node
 
