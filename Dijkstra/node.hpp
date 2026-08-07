@@ -9,9 +9,10 @@ class Node
 	private:
 		char vert;
 		std::list<char> edge;
-		std::unordered_map<char, int> costMap;
+
 		 
 	public:
+		std::unordered_map<char, int> costMap;
 		void setVert(char);
 		void addEdge(char,int);
 		void displayNode();

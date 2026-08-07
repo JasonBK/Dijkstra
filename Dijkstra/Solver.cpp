@@ -1,6 +1,7 @@
 #include "Solver.h"
 #include <iostream>
 
+
 //update estimates
     //update estimated min distance to connected vertices
         // for all neighbours of current node
@@ -20,14 +21,22 @@
 //functions find all neighbours ocurrent node
     // make sure all nodes unexplored
         //
-Solver::Solver(char start,char end) 
+Solver::Solver(char start,char end,Node startN, Node endN) 
 {
-    startNode = start;
-    endNode = end;
+    Solver::startNodeChar = start;
+    Solver::endNodeChar = end;
+    Solver::startNode = startN;
+    Solver::endNode = endN;
+        
+    Solver::exploreMap.assign(start, false, INFINITY, startNode);
 
 }
 void Solver::calcDistance(Graph G,Node N)
 { 
+    int totalCost, cost, currentNodeCost;
+
+    N.
+    totalCost = cost + currentNodeCost;
 }
 void Solver::markNodeVisited(Graph G,Node N)
 {

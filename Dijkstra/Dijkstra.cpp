@@ -64,6 +64,8 @@ int main()
 
 //mark allnodes unvisited empty visited nodes
 
+//update estimates
+
 //tentavide minimum distance to node for all nodes
 //https://www.google.com/search?q=dijkstra+algorithm&num=10&sca_esv=f807a6330220bb73&rlz=1C1CHBF_enCA1202CA1202&sxsrf=APpeQnv-fLo-7CFMsKuuJvof-D71mJ-LEQ%3A1785597962281&ei=ChBuatveEImCm9cP45WOyAY&biw=1920&bih=919&ved=0ahUKEwjbi4Pi3v-VAxUJweYEHeOKA2kQ4dUDCBA&uact=5&oq=dijkstra+algorithm&gs_lp=Egxnd3Mtd2l6LXNlcnAiEmRpamtzdHJhIGFsZ29yaXRobTIEECMYJzIEECMYJzILEAAYgAQYigUYkQIyBhAAGAcYHjILEAAYgAQYigUYkQIyCxAAGIAEGIoFGJECMgsQABiABBiKBRiRAjIKEAAYgAQYigUYQzIGEAAYBxgeMgoQABiABBiKBRhDSJMJUP8GWP8GcAJ4AZABAJgBaqABaqoBAzAuMbgBA8gBAPgBAZgCA6ACgAHCAgoQABhHGNYEGLADwgIXEC4Y3AYYuAYY2gYY2AIYyAMYsAPYAQGYAwCIBgGQBg66BgYIARABGBmSBwMyLjGgB9QHsgcDMC4xuAdywgcDMi0zyAcSgAgB&sclient=gws-wiz-serp#fpstate=ive&vld=cid:db8bad24,vid:bZkzH5x0SKU,st:0
 //explore start node
