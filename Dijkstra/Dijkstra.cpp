@@ -45,22 +45,35 @@ int main()
     e.addEdge('C', 9);
     e.addEdge('D', 3);
     e.addEdge('F', 1);
-
+  
     f.setVert('F');
     f.addEdge('C', 3);
     f.addEdge('D', 2);
     f.addEdge('E', 1);
 
-    starterGraph.addNode(a);
-    starterGraph.addNode(b);
-    starterGraph.addNode(c);
-    starterGraph.addNode(d);
-    starterGraph.addNode(e);
-    starterGraph.addNode(f);
+    starterGraph.addNode(&a);
+    starterGraph.addNode(&b);
+    starterGraph.addNode(&c);
+    starterGraph.addNode(&d);
+    starterGraph.addNode(&e);
+    starterGraph.addNode(&f);
+    //a.cheapestCostToNode = 99;
+    //std::cout << "A Cost:" << a.cheapestCostToNode;
+    
+    //set initial node cost to 0
+    //identify start node and end node
+    Solver agent('A', 'C',&a,&c);
+    //main loop
+    //go until end node is explored
+    agent.visitNode(starterGraph, a);
+    //find all neighbours
 
-    Solver agent('A', 'C');
+    //update estimate
+        //update estimated distance to connected nodes
+            // forall neighbours of current node
 
-// identify start node and end node
+     
+
 
 //mark allnodes unvisited empty visited nodes
 

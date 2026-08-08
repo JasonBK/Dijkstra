@@ -8,14 +8,19 @@ class Node
 {
 	private:
 		char vert;
-		std::list<char> edge;
+
 
 		 
 	public:
 		std::unordered_map<char, int> costMap;
+		std::list<char> edge;
+		bool explored{false};
+		char previousNode;
+		int cheapestCostToNode;
 		void setVert(char);
 		void addEdge(char,int);
 		void displayNode();
+
 };
 
 #endif

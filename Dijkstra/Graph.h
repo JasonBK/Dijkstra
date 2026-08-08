@@ -4,9 +4,9 @@
 class Graph
 {
 private:
-	std::list<Node> nodeList;
+	std::list<Node*> nodeList;
 public:
-	void addNode(Node);
+	void addNode(Node*);
 	void displayList();
 
 

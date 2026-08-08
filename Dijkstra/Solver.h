@@ -16,8 +16,8 @@ private:
 	Node endNode;
 // map with node ,cost to go to node, previous node,
 public:
-	Solver(char, char);
-	std::unordered_map<Node, bool, int, Node> exploreMap;
+	Solver(char, char, Node*, Node*);
+	//std::unordered_map<Node, bool, int, Node> exploreMap;
 	void calcDistance(Graph,Node);
 	void markNodeVisited(Graph,Node);
 	void visitNode(Graph,Node);
