@@ -6,12 +6,8 @@
 
 class Node
 {
-	private:
-		char vert;
-
-
-		 
 	public:
+		char vert;
 		std::unordered_map<char, int> costMap;
 		std::list<char> edge;
 		bool explored{false};

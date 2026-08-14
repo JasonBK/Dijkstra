@@ -5,7 +5,7 @@
 
 class Solver
 {
-private:
+public:
 	
 	Node currentNode;
 	char currentNodeChar;
@@ -15,10 +15,10 @@ private:
 	Node startNode;
 	Node endNode;
 // map with node ,cost to go to node, previous node,
-public:
+
 	Solver(char, char, Node*, Node*);
 	//std::unordered_map<Node, bool, int, Node> exploreMap;
-	void calcDistance(Graph,Node);
+	int calcDistance(Graph,char);
 	void markNodeVisited(Graph,Node);
 	void visitNode(Graph,Node);
 	void updatenodes(Graph, Node);

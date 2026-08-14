@@ -4,6 +4,7 @@
 void Node::setVert(char v)
 {
 	Node::vert = v;
+	cheapestCostToNode = 100;
 }
 
 void Node::addEdge(char e, int cost)

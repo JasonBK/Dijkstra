@@ -51,12 +51,12 @@ int main()
     f.addEdge('D', 2);
     f.addEdge('E', 1);
 
-    starterGraph.addNode(&a);
-    starterGraph.addNode(&b);
-    starterGraph.addNode(&c);
-    starterGraph.addNode(&d);
-    starterGraph.addNode(&e);
-    starterGraph.addNode(&f);
+    starterGraph.addNode('A', &a);
+    starterGraph.addNode('B', &b);
+    starterGraph.addNode('C', &c);
+    starterGraph.addNode('D', &d);
+    starterGraph.addNode('E', &e);
+    starterGraph.addNode('F', &f);
     //a.cheapestCostToNode = 99;
     //std::cout << "A Cost:" << a.cheapestCostToNode;
     
@@ -94,7 +94,7 @@ int main()
                 // compare stored vs current distance
                     //if stored >current min, save current distance as node and current node as previous node
         //mark current node as explored
-    //choose next vertex
+    //choose next vertex 
         //choose unexplored node with smallest estimate
             //pick smallest vallue from unexplored nodes list
             // current node = min node

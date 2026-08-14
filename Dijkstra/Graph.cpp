@@ -3,7 +3,7 @@
 #include "node.hpp"
 #include <list>
 
-void Graph::addNode(Node* node)
+void Graph::addNode(char nodeChar, Node* node)
 {
-	Graph::nodeList.push_back(node);
+	Graph::nodeList[nodeChar] = node;
 }

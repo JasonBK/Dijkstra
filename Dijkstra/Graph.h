@@ -1,12 +1,11 @@
 #pragma once
 #include "node.hpp"
-#include <list>
+#include <unordered_map>
 class Graph
 {
-private:
-	std::list<Node*> nodeList;
 public:
-	void addNode(Node*);
+	std::unordered_map<char, Node*> nodeList;
+	void addNode(char,Node*);
 	void displayList();
 
 
