@@ -62,10 +62,18 @@ int main()
     
     //set initial node cost to 0
     //identify start node and end node
+    std::cout << "A Explored:" << a.explored<<std::endl;
     Solver agent('A', 'C',&a,&c);
+    agent.visitNode(starterGraph, a);
+    std::cout << "A Exploredafter first:" << a.explored << std::endl;
     //main loop
     //go until end node is explored
-    agent.visitNode(starterGraph, a);
+    while (!c.explored)
+    {
+        agent.nextNode();
+        agent.visitNode(starterGraph, agent.currentNode);
+    }
+    agent.retrievePath(starterGraph, a, c);
     //find all neighbours
 
     //update estimate
